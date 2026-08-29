@@ -1,11 +1,8 @@
-// ─── Variables ───────────────────────────────────────────────────────────────
-$color-bg: #ffffff;
-$color-fg: #171717;
+@use "../shared/styles/variables" as *;
+@use "normalize.css/normalize";
 
-$color-bg-dark: #0a0a0a;
-$color-fg-dark: #ededed;
 
-// ─── Reset & Base ─────────────────────────────────────────────────────────────
+// ─── Base (normalize.css handles cross-browser reset above) ───────────────────
 *,
 *::before,
 *::after {
@@ -17,16 +14,10 @@ $color-fg-dark: #ededed;
 :root {
   --background: #{$color-bg};
   --foreground: #{$color-fg};
-
-  @media (prefers-color-scheme: dark) {
-    --background: #{$color-bg-dark};
-    --foreground: #{$color-fg-dark};
-  }
 }
 
 html {
   height: 100%;
-  color-scheme: light dark;
 }
 
 html,
@@ -41,12 +32,14 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.wrapper-inner {
+	max-width: 1360px;
+	margin: 0px auto;
+}
+.wrapper-outer {
+	padding: 40px;
 }

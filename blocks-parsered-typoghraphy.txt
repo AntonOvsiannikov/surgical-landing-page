@@ -1,0 +1,97 @@
+// Typography
+// Section 1
+//BADGE
+font-family: F37 Zagma Mono Trial;
+font-weight: 400;
+font-style: Book;
+font-size: 12px;
+leading-trim: CAP_HEIGHT;
+line-height: 14px;
+letter-spacing: -0.5%;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+
+//TITLE
+font-family: PP Neue Montreal;
+font-weight: 400;
+font-style: Book;
+font-size: 48px;
+leading-trim: NONE;
+line-height: 56px;
+letter-spacing: -1.5%;
+
+//SUBTITLE
+font-family: PP Neue Montreal;
+font-weight: 400;
+font-style: Book;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
+//CARD BEFORE/AFTER TITLE
+font-family: F37 Zagma Mono Trial;
+font-weight: 400;
+font-style: Book;
+font-size: 16.15px;
+leading-trim: NONE;
+line-height: 18.84px;
+letter-spacing: -0.5%;
+text-transform: uppercase;
+
+//CARD STEPS DESCRIPTION
+//NUMBER
+font-family: F37 Zagma Mono Trial;
+font-weight: 400;
+font-style: Book;
+font-size: 12px;
+leading-trim: CAP_HEIGHT;
+line-height: 14px;
+letter-spacing: -0.5%;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+
+//TEXT
+font-family: PP Neue Montreal;
+font-weight: 400;
+font-style: Book;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0%;
+
+//CARD STEPS DESCRIPTION - SELECTED OR HOVERD
+//NUMBER
+font-family: F37 Zagma Mono Trial;
+font-weight: 400;
+font-style: Book;
+font-size: 12px;
+leading-trim: CAP_HEIGHT;
+line-height: 14px;
+letter-spacing: -0.5%;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+
+//TEXT
+font-family: PP Neue Montreal;
+font-weight: 400;
+font-style: Book;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 24px;
+letter-spacing: 0%;
+
+
+// Section 2
+
+// Section 3
+
+// Section 4
+//Part - 1
+
+//Part - 2

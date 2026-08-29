@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "skills": {
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "skillPath": "skills/agent-browser/SKILL.md",
+      "computedHash": "a674b7d81066e3cc471a7512ddb4ae724418cbfefa75cbb050b0dc430e4d57a0"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "d6cb30212b3b19f531378574784af1da09928b2e5078f299eaeaedd50191a4af"
+    },
+    "task-planner": {
+      "source": "b-open-io/prompts",
+      "sourceType": "github",
+      "skillPath": "skills/task-planner/SKILL.md",
+      "computedHash": "133b913c68b9452844370fecda7b53460b6e6fefeac30e29bf63fc863ccd0dc9"
+    }
+  },
+  "plugins": {
+    "gsap-skills": {
+      "enabled": true
+    }
+  }
+}

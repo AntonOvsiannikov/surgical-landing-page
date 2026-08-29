@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+//Fonts
+@mixin font-neue-montreal {
+  font-family: 'PPNeueMontreal-Book', sans-serif;
+}
+
+@mixin font-zagma-mono {
+  font-family: 'F37ZagmaMonoTrial-Book', monospace;
+}
+
+//Container
+@mixin full-width-height {
+	width: 100%;
+	height: 100%;
+}
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin flex-content-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+@mixin flex-column-gap($gap) {
+	@include flex-column;
+	gap: $gap;
+}
