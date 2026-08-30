@@ -9,11 +9,11 @@
 }
 
 @mixin section-border-y {
-  border-top: 1px solid $introducing-card-bg;
-  border-bottom: 1px solid $introducing-card-bg;
+  border-top: 1px solid $border-light;
+  border-bottom: 1px solid $border-light;
 }
 
 @mixin section-border-x {
-  border-left: 1px solid $introducing-card-bg;
-  border-right: 1px solid $introducing-card-bg;
+  border-left: 1px solid $border-light;
+  border-right: 1px solid $border-light;
 }

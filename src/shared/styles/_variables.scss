@@ -6,24 +6,27 @@ $color-white: #ffffff;
 $color-primary: #1a6b9a;
 $color-primary-dark: #0e4a6e;
 
+// Shared section colors
+$section-heading: rgba(35, 49, 55, 1);
+$accent: rgba(154, 174, 181, 1);
+$text-muted: rgba(81, 82, 85, 1);
+$border-light: rgba(242, 242, 242, 1);
+$border-default: rgba(215, 229, 235, 1);
+$badge-border: rgba(199, 209, 213, 0.3);
+
 // Introducing section colors
-$introducing-bg: rgba(35, 49, 55, 1);
-$introducing-border: rgba(215, 229, 235, 1);
-$introducing-accent: rgba(154, 174, 181, 1);
-$introducing-text-muted: rgba(81, 82, 85, 1);
-$introducing-card-bg: rgba(242, 242, 242, 1);
 $introducing-step-gradient-from: rgba(205, 219, 225, 1);
 $introducing-step-gradient-to: rgba(134, 154, 161, 1);
-$introducing-badge-border: rgba(199, 209, 213, 0.3);
 $introducing-photo-bg: rgba(174, 194, 201, 1);
 
 // FAQ section colors
-$faq-category-bg: rgba(35, 49, 55, 1);
-$faq-category-text: #ffffff;
-$faq-question-text: rgba(215, 229, 235, 1);
-$faq-answer-text: rgba(180, 196, 203, 1);
-$faq-border: rgba(215, 229, 235, 1);
-$faq-icon-color: rgba(154, 174, 181, 1);
+$faq-text: rgba(249, 251, 251, 1);
+$faq-category-open-bg: rgba(154, 174, 181, 1);
+$faq-icon-default: rgba(117, 128, 132, 1);
+$faq-question-open-bg: rgba(255, 255, 255, 0.1);
+$faq-question-border: rgba(255, 255, 255, 0.1);
+$faq-question-shadow: rgba(35, 49, 55, 0.03);
+$faq-overlay-bg: rgba(255, 255, 255, 0.2);
 
 // ─── Breakpoints ─────────────────────────────────────────────────────────────
 $screen-xs:  376px;

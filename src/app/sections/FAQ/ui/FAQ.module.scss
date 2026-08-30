@@ -9,76 +9,11 @@
   }
 }
 
-
 .header {
-  @include section-border-x;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
   padding: 0 0 32px;
 
   @media (max-width: $screen-sm-max) {
-    gap: 12px;
     padding: 0 0 24px;
-  }
-}
-
-.badge {
-  @include font-zagma-mono;
-
-  display: inline-block;
-  padding: 3px 9px;
-  border: 1px solid $introducing-badge-border;
-  border-radius: 100px;
-  font-size: 12px;
-  letter-spacing: -0.005em;
-  text-transform: uppercase;
-  color: $introducing-accent;
-
-  @media (max-width: $screen-sm-max) {
-    font-size: 10px;
-  }
-}
-
-.title {
-  @include font-neue-montreal;
-
-  margin: 0;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: -0.015em;
-  color: $introducing-bg;
-
-  @media (max-width: $screen-sm-max) {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
-.titleAccent {
-  color: $introducing-accent;
-}
-
-.subtitle {
-  @include font-neue-montreal;
-
-  margin: 0;
-  color: $introducing-text-muted;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-
-  @media (max-width: $screen-sm-max) {
-    font-size: 13px;
-    line-height: 20px;
-
-    br {
-      display: none;
-    }
   }
 }
 
@@ -90,7 +25,7 @@
   padding: 8px;
   margin: 0 auto;
   border-radius: 12px;
-  color: rgba(249, 251, 251, 1);
+  color: $faq-text;
 
   @media (max-width: $screen-sm-max) {
     width: 100%;
@@ -110,7 +45,7 @@
   position: relative;
   overflow: hidden;
   padding: 8px;
-  border-bottom: 1px solid $faq-border;
+  border-bottom: 1px solid $border-default;
   border-radius: 0;
   transition: border-radius 0s 0.55s, border-color 0.3s ease, background 0.3s ease;
 
@@ -148,7 +83,7 @@
 .categoryOpen {
   border-radius: 12px;
   border-bottom-color: transparent;
-  background: rgba(154, 174, 181, 1);
+  background: $faq-category-open-bg;
   transition: border-radius 0s 0s, border-color 0.3s ease, background 0.3s ease;
 
   &::before {
@@ -172,10 +107,8 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0;
-  color: rgba(35, 49, 55, 1);
+  color: $section-heading;
   text-align: left;
-  vertical-align: middle;
 
   @media (max-width: $screen-sm-max) {
     padding: 12px;
@@ -185,8 +118,7 @@
 }
 
 .categoryHeaderOpen {
-  color: $faq-category-text;
-  border-radius: 12px 12px 0 0;
+  color: $color-white;
 }
 
 .categoryIcon {
@@ -196,13 +128,13 @@
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  color: rgba(117, 128, 132, 1);
+  color: $faq-icon-default;
   transition: transform 0.55s cubic-bezier(0.25, 0.1, 0.25, 1), color 0.4s ease;
 }
 
 .categoryIconOpen {
   transform: rotate(45deg);
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
 }
 
 // ─── Questions list inside category ──────────────────────────────────────────
@@ -238,7 +170,7 @@
     position: absolute;
     inset: 0;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.2);
+    background: $faq-overlay-bg;
     backdrop-filter: blur(100px);
     pointer-events: none;
     z-index: 0;
@@ -250,7 +182,7 @@
   position: relative;
   z-index: 1;
   border-radius: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid $faq-question-border;
   transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, border-radius 0s 0.45s;
 
   &:last-child {
@@ -261,8 +193,8 @@
 .questionItemOpen {
   border-radius: 8px;
   border-bottom-color: transparent;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 16px 16px 0px rgba(35, 49, 55, 0.03);
+  background: $faq-question-open-bg;
+  box-shadow: 0px 16px 16px 0px $faq-question-shadow;
   transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, border-radius 0s 0s;
 }
 
@@ -280,7 +212,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
   text-align: left;
   transition: opacity 0.2s ease;
 
@@ -302,7 +234,7 @@
   width: 20px;
   height: 20px;
   flex-shrink: 0;
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
 
   .iconLineV {
     transition: transform 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -342,7 +274,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: rgba(255, 255, 255, 1);
+  color: $color-white;
   padding-bottom: 14px;
 
   @media (max-width: $screen-sm-max) {

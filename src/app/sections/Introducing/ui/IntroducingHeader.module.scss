@@ -1,64 +1,10 @@
 @use "../../../../shared/styles" as *;
 
 .header {
-  @include section-border-x;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 40px 0px;
-}
-
-.badge {
-  @include font-zagma-mono;
-
-  display: inline-block;
-  padding: 3px 9px;
-  border: 1px solid $introducing-badge-border;
-  border-radius: 100px;
-  font-size: 12px;
-  letter-spacing: -0.005em;
-  text-transform: uppercase;
-  vertical-align: middle;
-  color: $introducing-accent;
-}
-
-.title {
-  @include font-neue-montreal;
-
-  margin: 0;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: -0.015em;
-  color: $introducing-bg;
-  font-style: normal;
-}
-
-.brandHighlight {
-  @include font-neue-montreal;
-
-  color: $introducing-accent;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: -0.015em;
+  padding: 40px 0;
 }
 
 .trademark {
   font-size: 0.5em;
   vertical-align: super;
-}
-
-.subtitle {
-  @include font-neue-montreal;
-
-  color: $introducing-text-muted;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: center;
-  vertical-align: middle;
 }

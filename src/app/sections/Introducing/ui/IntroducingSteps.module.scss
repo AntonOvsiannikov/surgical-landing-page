@@ -9,7 +9,7 @@
 
 .stepWrapper {
   padding: 16px;
-  outline: 1px solid $introducing-card-bg;
+  outline: 1px solid $border-light;
 }
 
 .stepCard {
@@ -18,7 +18,7 @@
   gap: 48px;
   height: 100%;
 
-  outline: 1px solid $introducing-card-bg;
+  outline: 1px solid $border-light;
   border-radius: 12px;
   padding: 16px;
 
@@ -52,7 +52,7 @@
 
   &:hover {
     outline: none;
-    background-color: $introducing-accent;
+    background-color: $accent;
 
     .stepNumber {
       background: rgba($color-white, 0.2);
@@ -76,7 +76,7 @@
 
   width: 24px;
   height: 24px;
-  background: $introducing-accent;
+  background: $accent;
   border-radius: 50%;
   
   font-size: 12px;
@@ -97,6 +97,6 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0;
-  color: $introducing-bg;
+  color: $section-heading;
   transition: color 0.3s ease;
 }
