@@ -1,0 +1,61 @@
+@use "../../../../shared/styles" as *;
+
+.card {
+  position: relative;
+  overflow: hidden;
+  height: clamp(380px, 26.23vw + 178px, 556px);
+}
+
+.cardInner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: clamp(16px, 2vw, 28px);
+  height: 100%;
+}
+
+.svgOverlay {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+// ─── Photo sides ─────────────────────────────────────────────────────────────
+.photoSide {
+  position: relative;
+  overflow: hidden;
+  background-color: $introducing-photo-bg;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  border-radius: 8px;
+  height: 100%;
+  aspect-ratio: 438 / 500;
+}
+
+.photoBefore {
+  background-image: url("/images/facial-before.png");
+}
+
+.photoAfter {
+  background-image: url("/images/facial-after.png");
+}
+
+.photoLabel {
+  @include font-zagma-mono;
+
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+  color: $color-white;
+  white-space: nowrap;
+}

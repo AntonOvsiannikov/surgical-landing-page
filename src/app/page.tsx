@@ -1,6 +1,6 @@
-import { Hero, About, Introducing } from "./sections";
+import { Hero, About, Introducing } from './sections';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Introducing />
@@ -8,4 +8,6 @@ export default function Home() {
       <About />
     </>
   );
-}
+};
+
+export default Home;

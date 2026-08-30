@@ -1,6 +1,7 @@
 @use "../shared/styles/variables" as *;
 @use "normalize.css/normalize";
 
+@use "../shared/styles" as *;
 
 // ─── Base (normalize.css handles cross-browser reset above) ───────────────────
 *,
@@ -32,6 +33,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
+  // background: lightgreen;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,6 +42,10 @@ body {
 	max-width: 1360px;
 	margin: 0px auto;
 }
-.wrapper-outer {
-	padding: 40px;
+
+.wrapper-border-y {
+  @include section-border-y;
+}
+.wrapper-border-x {
+  @include section-border-x;
 }
