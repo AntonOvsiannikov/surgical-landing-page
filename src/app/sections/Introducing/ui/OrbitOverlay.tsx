@@ -8,6 +8,7 @@ import {
   BEAM_HEAD_GLOW_COLOR,
   buildTrailColors,
 } from '../utils/orbitAnimation';
+import styles from './BeforeAfterCard.module.scss';
 
 const TRAIL_STROKE_WIDTH = 1.35;
 const trailColors = buildTrailColors(BEAM_COUNT, TRAIL_SEGMENT_COUNT);
@@ -36,14 +37,6 @@ export const OrbitOverlay = ({
     xmlns="http://www.w3.org/2000/svg"
   >
     <defs>
-      <filter id="trailGlow" x="-30%" y="-30%" width="160%" height="160%">
-        <feGaussianBlur stdDeviation="1.5" in="SourceGraphic" result="blur" />
-        <feMerge>
-          <feMergeNode in="blur" />
-          <feMergeNode in="SourceGraphic" />
-        </feMerge>
-      </filter>
-
       <filter id="headGlow" x="-150%" y="-150%" width="400%" height="400%">
         <feDropShadow
           dx="0"
@@ -58,7 +51,7 @@ export const OrbitOverlay = ({
       ref={hiddenPathRef}
       stroke="none"
       fill="none"
-      style={{ visibility: 'hidden' }}
+      className={styles.hiddenPath}
     />
 
     <path
@@ -79,7 +72,6 @@ export const OrbitOverlay = ({
         strokeWidth={TRAIL_STROKE_WIDTH}
         strokeLinecap="round"
         fill="none"
-        filter="url(#trailGlow)"
       />
     ))}
 

@@ -1,11 +1,10 @@
-import { Hero, About, Introducing } from './sections';
+import { Introducing, FAQ } from './sections';
 
 const Home = () => {
   return (
     <>
       <Introducing />
-      <Hero />
-      <About />
+      <FAQ />
     </>
   );
 };

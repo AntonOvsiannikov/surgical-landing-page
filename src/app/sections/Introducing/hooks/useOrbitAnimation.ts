@@ -72,8 +72,11 @@ const useOrbitAnimation = (photoSelector: string): OrbitRefs => {
         const cycleDurationMs = ORBIT_DURATION_SEC * 1000;
 
         let elapsed = 0;
+        let frameCount = 0;
         tickerFn = () => {
           elapsed += gsap.ticker.deltaRatio() * (1000 / 60);
+          frameCount++;
+          if (frameCount % 2 !== 0) return;
           const shift =
             ((elapsed % cycleDurationMs) / cycleDurationMs) * totalLength;
           for (let idx = 0; idx < segments.length; idx++) {

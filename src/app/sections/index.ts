@@ -1,3 +1,2 @@
-export { Hero } from "./Hero";
-export { About } from "./About";
-export { Introducing } from "./Introducing";
+export { Introducing } from './Introducing';
+export { FAQ } from './FAQ';

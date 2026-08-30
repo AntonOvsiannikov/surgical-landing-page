@@ -21,6 +21,11 @@
   overflow: visible;
   will-change: transform;
   transform: translateZ(0);
+  contain: layout style;
+}
+
+.hiddenPath {
+  visibility: hidden;
 }
 
 // ─── Photo sides ─────────────────────────────────────────────────────────────
